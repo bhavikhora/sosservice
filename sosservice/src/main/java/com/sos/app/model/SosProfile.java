@@ -8,6 +8,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by bibin kt .
@@ -65,6 +66,16 @@ public class SosProfile {
 
     private String mobile1;
 
+    public String getMobile2() {
+        return mobile2;
+    }
+
+    public void setMobile2(String mobile2) {
+        this.mobile2 = mobile2;
+    }
+
+    private String mobile2;
+
     private Boolean paidService;
 
     private Boolean enableSocial;
@@ -83,4 +94,15 @@ public class SosProfile {
     public void setEmail(String email) {
         this.email = email;
     }
+
+  /*  public List getContactNumbers() {
+        return contactNumbers;
+    }
+
+    public void setContactNumbers(List contactNumbers) {
+        this.contactNumbers = contactNumbers;
+    }
+
+    @OneToMany( targetEntity=SosContacts.class )
+    private List contactNumbers;*/
 }
